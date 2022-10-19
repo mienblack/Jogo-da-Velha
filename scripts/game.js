@@ -35,10 +35,8 @@ function handleMove(position) {
             velha()
             if (playerTime == 0) {
                 playerTime = 1;
-                emojiVencedor = "⚔️"
             } else {
                 playerTime = 0;
-                emojiVencedor = "🛡️"
             }
         }
 

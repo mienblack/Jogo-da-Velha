@@ -1,20 +1,39 @@
+@font-face {
+    font-family: 'get-schwifty';
+    src: url("../font/get_schwifty.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
 body {
+    height: 100vh;
     overflow: hidden;
     background-image: url("../images/backgroundRM_3.png");
-    background-position: center center;
-    color: white;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
 h1 {
+    position: relative;
+    top: 10px;
     margin: auto;
     margin-bottom: 50px;
+    font-family: 'get-schwifty', Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: 1px 1px 2px rgb(255, 255, 163);
     padding: 10px;
+    font-weight: bold;
     background-color: black;
-    color: beige;
-    width: 25%;
-    border: 1px solid beige;
+    width: 325px;
+    border: 1px solid rgb(255, 255, 163);
     border-radius: 5px;
 }
 
@@ -22,8 +41,8 @@ h1 {
     display: inline-block;
     width: 100px;
     height: 100px;
-    background-color: beige;
-    border: 1px solid gray;
+    background-color: rgba(0, 0, 0, 0.80);
+    border: 1px solid rgba(0, 206, 206, 0.885);
 }
 
 .o {
@@ -59,13 +78,21 @@ h1 {
 }
 
 #btnJogar {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'get-schwifty', Arial, Helvetica, sans-serif;
+    color: black;
+    text-shadow: 2px 3px 10px rgb(255, 255, 163);  
     margin-top: 30px;
+    width: 250px;
+    height: 70px;
     font-size: 14pt;
     font-weight: bold;
-    padding: 10px;
-    background-color: beige;
+    background-color: rgba(0, 206, 206, 0.885);
     border: 1px solid gray;
+    cursor: pointer;
+}
+
+#btnJogar:hover {
+    font-size: 18pt;
 }
 
 .gifRM img {
@@ -73,16 +100,32 @@ h1 {
 }
 
 #game-over {
+    font-family: 'get-schwifty', Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 2px rgb(255, 255, 163);
     top: 0;
     position: absolute;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
-    color: white;
-    font-size: 50px;
-    display: none;
+    color: rgba(0, 206, 206, 0.885);
+    font-size: 60px;
+    font-weight: bold;
+    display: flex;
 
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+@media screen and (max-width: 450px) {
+    #game-over {
+        font-size: 35px;
+    }
+
+    #btnJogar {
+        width: 150px;
+        height: 50px;
+        font-size: 10pt;
+    }
+}
+
