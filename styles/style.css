@@ -1,8 +1,21 @@
 body {
-    background: rgba(0, 0, 0, 0.87);
+    overflow: hidden;
+    background-image: url("../images/backgroundRM_3.png");
+    background-position: center center;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+}
+
+h1 {
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 10px;
+    background-color: black;
+    color: beige;
+    width: 25%;
+    border: 1px solid beige;
+    border-radius: 5px;
 }
 
 .square {
@@ -14,14 +27,14 @@ body {
 }
 
 .o {
-    position:relative;
+    position: relative;
 }
 
 .o::after {
     color: black;
     font-size: 50px;
     line-height: 100px;
-    content: "\1F6E1";
+    content: url("../images/rick.png");
     position: absolute;
     top: 0;
     bottom: 0;
@@ -30,14 +43,14 @@ body {
 }
 
 .x {
-    position:relative;
+    position: relative;
 }
 
 .x::after {
     color: black;
     font-size: 50px;
     line-height: 100px;
-    content: "\2694";
+    content: url("../images/morty.png");
     position: absolute;
     top: 0;
     bottom: 0;
@@ -53,4 +66,23 @@ body {
     padding: 10px;
     background-color: beige;
     border: 1px solid gray;
+}
+
+.gifRM img {
+    height: 300px;
+}
+
+#game-over {
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-size: 50px;
+    display: none;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
