@@ -10,8 +10,8 @@
 
 
 <div align="center">
-  <img alt="Jogo da Velha" title="Jogo da Velha no Desktop" src="./toReadme/desktop_jogo-da-velha.gif" height="400px"/>
-  <img alt="Jogo da Velha" title="Jogo da Velha no Mobile" src="./toReadme/mobile_jogo-da-velha.gif" height="400px"/>
+  <img alt="Jogo da Velha" title="Jogo da Velha no Desktop" src="./toReadMe/desktop_jogo-da-velha.gif" height="400px"/>
+  <img alt="Jogo da Velha" title="Jogo da Velha no Mobile" src="./toReadMe/mobile_jogo-da-velha.gif" height="400px"/>
 </div>
 
 ## Tecnologias
