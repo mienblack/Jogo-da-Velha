@@ -14,7 +14,11 @@
   <img alt="Jogo da Velha" title="Jogo da Velha no Mobile" src="./toReadMe/mobile_jogo-da-velha.gif" height="400px"/>
 </div>
 
-## Tecnologias
+## 💻 Projeto
+
+Este jogo da velha utiliza DOM e recursos do CSS para as modificações visuais na tela.
+
+## 🚀 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
